@@ -30,6 +30,10 @@ namespace PizzaBox.Domain.Models
                 case "3":
                     crust = "Thick";
                     break;
+
+                case "4":
+                    crust = "Gluten Free";
+                    break;
             }
 
             switch (SizeSelect)
@@ -83,7 +87,14 @@ namespace PizzaBox.Domain.Models
                     break;
             }
 
-            return PizzaList;
+            if (PizzaList.Count <= 100)
+                return PizzaList;
+
+            else
+            {
+                Console.WriteLine("WOW, you are trying to buy way too many pizzas... # of pizzas cannot exceed 100");
+                return null;
+            }
             
 
         }

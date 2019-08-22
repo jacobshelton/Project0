@@ -48,7 +48,7 @@ namespace PizzaBox.Client
             if(PizzaSelect == "1") 
             {
                 Console.WriteLine("Please select the style of crust:");
-                Console.WriteLine("1 = Traditional American(the crust you know and love), 2 = Thin, 3 = Thick");
+                Console.WriteLine("1 = Traditional American(the crust you know and love), 2 = Thin, 3 = Thick, 4 = Gluten Free");
 
                 CrustSelect = Console.ReadLine();
 
