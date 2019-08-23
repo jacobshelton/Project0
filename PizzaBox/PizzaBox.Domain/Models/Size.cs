@@ -9,19 +9,23 @@ namespace PizzaBox.Domain.Models
             switch (name)
             {
                 case "10-inch":
-                    Price = 10.00;
+                    Price = 9.99;
                     break;
 
                 case "12-inch":
-                    Price = 12.00;
+                    Price = 11.99;
                     break;
 
                 case "14-inch":
-                    Price = 14.00;
+                    Price = 13.99;
                     break;
 
                 case "16-inch":
-                    Price = 16.00;
+                    Price = 15.99;
+                    break;
+
+                case "18-inch":
+                    Price = 17.99;
                     break;
             }
         }

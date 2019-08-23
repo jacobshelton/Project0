@@ -6,6 +6,8 @@ namespace PizzaBox.Domain.Models
 {
     public class Order
     {
+
+        public List<Pizza> PizzaList {get; set;}
          //+ should be able to view its pizzas
         // - create a list of pizzas that the user adds to
         // - print the list

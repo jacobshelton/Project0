@@ -18,12 +18,7 @@ namespace PizzaBox.Domain.Models
                 toppings.Add(GetTopping(tops[i]));
             }
 
-            var pizza = new Pizza(madeCrust, madeSize, null);
-
-            /*for(int i = 0; i < toppings.Count; i++)
-            {
-                Console.WriteLine(toppings[i].Name);
-            }*/
+            var pizza = new Pizza(madeCrust, madeSize, toppings);
 
             return pizza;
         }
@@ -36,7 +31,7 @@ namespace PizzaBox.Domain.Models
                 toppings.Add(GetTopping(tops[i]));
             }
 
-            var NY = new NewYork(null);
+            var NY = new NewYork(toppings);
 
             return NY;
         }

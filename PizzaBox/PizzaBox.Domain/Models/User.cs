@@ -5,7 +5,7 @@ namespace PizzaBox.Domain.Models
 {
     public class User
     {
-        public Name Name {get; set;}
+        public string Name {get; set;}
         public List<Order> Orders {get; set;}
         public PizzaShop Recent {get; set;}
 

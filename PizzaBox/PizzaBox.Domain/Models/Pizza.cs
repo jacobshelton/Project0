@@ -12,6 +12,11 @@ namespace PizzaBox.Domain.Models
             Size = size;
             Toppings = tops;
         }
+
+        public override string ToString()
+        {
+            return $"{Crust} {Size} {Toppings}";
+        }
         
         //cost
         //public double Price {get; set;}
